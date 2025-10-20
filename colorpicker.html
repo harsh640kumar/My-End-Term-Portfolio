@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Choose Your Color</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* default light color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    transition: background-color 0.5s ease;
+  }
+  header {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  .color-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    width: 80%;
+    max-width: 600px;
+  }
+  .color-btn {
+    height: 80px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1rem;
+  }
+  .color-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  .back-btn {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+  }
+  .back-btn:hover {
+    background-color: #555;
+  }
+</style>
+</head>
+<body>
+
+<header>Pick a Background Color</header>
+
+<div class="color-grid">
+  <button class="color-btn" style="background-color: #3498db;" onclick="changeColor('#3498db')">Blue</button>
+  <button class="color-btn" style="background-color: #2ecc71;" onclick="changeColor('#2ecc71')">Green</button>
+  <button class="color-btn" style="background-color: #e74c3c;" onclick="changeColor('#e74c3c')">Red</button>
+  <button class="color-btn" style="background-color: #f1c40f;" onclick="changeColor('#f1c40f')">Yellow</button>
+  <button class="color-btn" style="background-color: #9b59b6;" onclick="changeColor('#9b59b6')">Purple</button>
+  <button class="color-btn" style="background-color: #e67e22;" onclick="changeColor('#e67e22')">Orange</button>
+  <button class="color-btn" style="background-color: #1abc9c;" onclick="changeColor('#1abc9c')">Teal</button>
+  <button class="color-btn" style="background-color: #34495e;" onclick="changeColor('#34495e')">Dark Gray</button>
+  <button class="color-btn" style="background-color: #ecf0f1; color:#333;" onclick="changeColor('#ecf0f1')">Light Gray</button>
+  <button class="color-btn" style="background-color: #ff69b4;" onclick="changeColor('#ff69b4')">Pink</button>
+</div>
+
+<a class="back-btn" href="index.html">← Back to Portfolio</a>
+
+<script>
+function changeColor(color) {
+    document.body.style.backgroundColor = color;
+}
+</script>
+
+</body>
+</html>

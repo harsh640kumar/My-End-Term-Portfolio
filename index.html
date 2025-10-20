@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harsh's Portfolio</title>
+<style>
+/* Reset */
+* {margin:0; padding:0; box-sizing:border-box; font-family: 'Poppins', sans-serif;}
+
+/* Body */
+body {
+    background-color: #fdf6e3; /* light beige */
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    position: sticky;
+    top: 0;
+    background: linear-gradient(90deg, #d7c4a0, #f3e1c0); /* beige gradient */
+    z-index: 100;
+}
+header img {
+    height: 50px;
+}
+header h1 {
+    font-size: 1.7rem;
+    color: #6b4f2a; /* warm brown */
+}
+nav a {
+    color: #6b4f2a;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: #c19a6b; /* light brown */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background-color: #dfd2b9; /* light beige */
+    color: #6b4f2a; /* brownish text for contrast */
+}
+
+.hero h2, .hero p {
+    background: none; /* remove any gradient/shading */
+    text-shadow: 1px 2px 3px rgba(0,0,0,0.1); /* subtle shadow for readability */
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Profile Section */
+.profile-card {
+    display: flex;
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #fff7e6;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.profile-card img {
+    width: 220px;
+    object-fit: cover;
+    border-right: 1px solid #eee;
+}
+.profile-info {
+    padding: 30px 40px;
+}
+.profile-info h3 {
+    margin-bottom: 12px;
+    font-size: 1.7rem;
+    color: #b5844b; /* dark beige */
+}
+.profile-info p {
+    margin-bottom: 12px;
+}
+.profile-info ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+.profile-info ul li {
+    margin-bottom: 8px;
+}
+
+/* Activities Section */
+.activities {
+    max-width: 1200px;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    padding: 0 20px;
+}
+.activity-card {
+    background-color: #fff7e6;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.activity-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.18);
+}
+.activity-card h3 {
+    padding: 15px 10px;
+    font-size: 1.25rem;
+    color: #b5844b;
+}
+.activity-card a {
+    display: block;
+    padding: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #b5844b;
+    border-top: 1px solid #eee;
+    transition: color 0.3s ease;
+}
+.activity-card a:hover {
+    color: #c19a6b;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: linear-gradient(90deg, #d7c4a0, #f3e1c0);
+    color: #6b4f2a;
+    margin-top: 50px;
+    font-size: 1rem;
+}
+footer a {
+    margin:0 10px;
+    text-decoration:none;
+    color:#6b4f2a;
+    transition: color 0.3s;
+}
+footer a:hover {
+    color: #c19a6b;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .profile-card img {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #eee;
+    }
+    .profile-info {padding: 25px;}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <img src="https://scaler-blog-prod-wp-content.s3.ap-south-1.amazonaws.com/wp-content/uploads/2022/10/22114541/Scaler_Logo_WhiteBG.jpg" alt="Scaler's Logo">
+  <h1>Harsh's Portfolio</h1>
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#activities">Activities</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="about">
+  <h2>Hello, I'm Harsh</h2>
+  <p>A first-year student and aspiring web developer creating interactive web projects and animations. I enjoy coding challenges, UI/UX experiments, and building engaging digital experiences.</p>
+</section>
+
+<section class="profile-card">
+  <!-- <img src="profile-pic.jpg" alt="Harsh Profile"> -->
+  <div class="profile-info">
+    <h3>About Me</h3>
+    <p>Combining creativity with coding to develop dynamic and interactive web-based activities.</p>
+    <h4>Skills & Interests:</h4>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Animations & Visual Effects</li>
+      <li>Problem Solving & Competitive Coding</li>
+      <li>UI/UX Design Basics</li>
+      <li>Java Programming</li>
+    </ul>
+  </div>
+</section>
+
+<section class="activities" id="activities">
+  <div class="activity-card">
+    <h3>Ferris Wheel</h3>
+    <a href="ferriswheel.html" target="_blank">View Activity</a>
+  </div>
+  <div class="activity-card">
+    <h3>Moon Orbit</h3>
+    <a href="moonorbit.html" target="_blank">View Activity</a>
+  </div>
+  <div class="activity-card">
+    <h3>Shapes</h3>
+    <a href="shapes.html" target="_blank">View Activity</a>
+  </div>
+  <div class="activity-card">
+    <h3>Movie Collection</h3>
+    <a href="movies.html" target="_blank">View Activity</a>
+  </div>
+  <div class="activity-card">
+    <h3>Recipe</h3>
+    <a href="recipe.html" target="_blank">View Activity</a>
+  </div>
+  <div class="activity-card">
+    <h3>Cafe Menu</h3>
+    <a href="cafemenu.html" target="_blank">View Activity</a>
+  </div>
+  <div class="activity-card">
+    <h3>Color Changer</h3>
+    <a href="colorpicker.html" target="_blank">View Activity</a>
+  </div>
+  <div class="activity-card">
+    <h3>Movie Poster</h3>
+    <a href="movieposters.html" target="_blank">View Activity</a>
+  </div>
+</section>
+
+<footer id="contact">
+  <p style="margin-bottom:15px; font-weight:500;">Connect with me:</p>
+  <a href="https://www.instagram.com/harsh640kumar/" target="_blank">Instagram</a>
+  <a href="https://www.linkedin.com/in/harsh-kumar-39839a369/" target="_blank">LinkedIn</a>
+  <a href="mailto:harsh.25bcs10144@sst.scaler.com">Email</a>
+</footer>
+
+</body>
+</html>

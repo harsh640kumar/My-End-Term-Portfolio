@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Movie Collection</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  header {
+    width: 100%;
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  table {
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 800px;
+    margin: 40px 0;
+    background-color: #2c3e50;
+  }
+  th, td {
+    padding: 12px 15px;
+    border: 1px solid #fff;
+    text-align: left;
+  }
+  th {
+    background-color: #34495e;
+  }
+  caption {
+    caption-side: top;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #f1c40f;
+  }
+  tr:nth-child(even) {
+    background-color: #3b4a59;
+  }
+  .back-btn {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #2980b9;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+  }
+  .back-btn:hover {
+    background-color: #1c5980;
+  }
+  @media (max-width: 600px) {
+    th, td {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  }
+</style>
+</head>
+<body>
+<header>My Movie Collection</header>
+
+<table>
+  <caption>Favourite Movies</caption>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Genre</th>
+      <th>Year</th>
+      <th>Directed By</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3 Idiots</td>
+      <td>Comedy</td>
+      <td>2007</td>
+      <td>Raj Kumar Hirani</td>
+    </tr>
+    <tr>
+      <td>Munna Bhai MBBS</td>
+      <td>Comedy</td>
+      <td>2003</td>
+      <td>Raj Kumar Hirani</td>
+    </tr>
+    <tr>
+      <td>Chennai Express</td>
+      <td>Comedy</td>
+      <td>2013</td>
+      <td>Rohit Shetty</td>
+    </tr>
+    <tr>
+      <td>Yeh Jawani Hai Deewani</td>
+      <td>Feel-Good</td>
+      <td>2013</td>
+      <td>Ayan Mukerji</td>
+    </tr>
+    <tr>
+      <td>War</td>
+      <td>Action</td>
+      <td>2019</td>
+      <td>Siddharth Anand</td>
+    </tr>
+  </tbody>
+</table>
+
+<a class="back-btn" href="index.html">← Back to Portfolio</a>
+</body>
+</html>
